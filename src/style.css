@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#content {
+    display: flex;
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(13, 111, 13);
+}
+
+.banner {
+    background-color: grey;
+}
