@@ -1,8 +1,7 @@
 @font-face {
-    font-family: "MyFont";
-    src: url('./my-font.woff2') format('woff2'),
-    url('./my-font.woff') format('woff');
-    font-style: normal;
+    font-family: "NewFont";
+    src: url('./new-font.woff2') format('woff2'),
+    url('./new-font.woff') format('woff');
 }
 
 body {
@@ -32,11 +31,11 @@ body {
 }
 
 .links {
-    font-family: "MyFont";
+    font-family: "NewFont";
     color: white;
     display: flex;
     padding: 20px 50px;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -81,6 +80,10 @@ body {
 }
 
 .desc {
-    /* font-family: "MyFont"; */
+    /* font-family: "NewFont"; */
     color: rgb(0, 0, 0);
+}
+
+#on-page {
+    border: 2px solid white;
 }

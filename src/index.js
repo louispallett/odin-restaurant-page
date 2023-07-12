@@ -1,8 +1,8 @@
 import './style.css';
-import bannerimg from './banner.jpg';
-console.log("Hello, World!");
+// import bannerimg from './banner.jpg';
+import onBooking from './bookings';
 
-function createPage() {
+const createPage = (() => {
     const content = document.getElementById("content");
     const header = document.createElement("div");
     const para = document.createElement("p");
@@ -38,7 +38,12 @@ function createPage() {
                     </div>`
 
     content.appendChild(main);
+})();
 
-}
-
-createPage();
+const onPage = (() => {
+    const link = document.querySelector(".link");
+    // link.addEventListener("click", (e) => {
+    //     e.onclick = onBooking;
+    // })
+    link.onclick = onBooking;
+})();
