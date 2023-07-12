@@ -24,21 +24,35 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(13, 111, 13);
+    background-color: #159c15;
 }
 
 .header > img {
-    padding-left: 50px;
+    padding: 0px 50px;
 }
 
 .links {
     font-family: "MyFont";
     color: white;
     display: flex;
-    gap: 40px;
     padding: 20px 50px;
     font-size: 1.75rem;
     font-weight: bold;
+}
+
+.link {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 5px 20px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 20px;
+}
+
+.link:hover {
+    background-color: rgb(128, 233, 128);;
 }
 
 .banner {
@@ -52,7 +66,7 @@ body {
 }
 
 .main {
-    background-color: rgba(32, 171, 32, 0.687);
+    background-color: #20ab20af;
     flex: 1;
     display: flex;
     flex-direction: column;

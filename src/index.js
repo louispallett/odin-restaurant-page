@@ -12,10 +12,9 @@ function createPage() {
     header.innerHTML = 
                         `<img src="../src/icon.svg" alt="teapot" id="icon">
                         <div class="links">
-                            <div class="link">Home</div>
-                            <div class="link">Bookings</div>
-                            <div class="link">Events</div>
-                            <div class="link">Contact Us</div>
+                            <button class="link">Home</button>
+                            <button class="link">Bookings</button>
+                            <button class="link">Contact Us</button>
                         </div>`
     content.appendChild(header);
 
