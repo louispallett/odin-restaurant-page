@@ -24,16 +24,32 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #159c15;
+    color: white;
+    font-weight: bold;
+    font-family: "NewFont";
 }
 
-.header > img {
-    padding: 0px 50px;
+.header > div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.header > div > img {
+    padding: 30px 20px;
+}
+
+.header > div:first-child > div {
+    max-width: 100px;
+}
+
+.header > div:first-child {
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: 8px;
 }
 
 .links {
-    font-family: "NewFont";
-    color: white;
-    display: flex;
     padding: 20px 50px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -85,5 +101,6 @@ body {
 }
 
 #on-page {
-    border: 2px solid white;
+    /* content: url("./leaf.svg");*/
+    border-bottom: 2px solid white;
 }
