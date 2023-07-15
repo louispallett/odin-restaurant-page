@@ -55,7 +55,7 @@ body {
     font-weight: bold;
 }
 
-.link {
+.links > button {
     background: none;
 	color: inherit;
 	border: none;
@@ -66,12 +66,8 @@ body {
     border-radius: 20px;
 }
 
-.link:hover {
+.links > button:hover {
     background-color: rgb(128, 233, 128);;
-}
-
-.banner {
-
 }
 
 .banner > img {
@@ -79,7 +75,7 @@ body {
     height: 100%;
     object-fit: cover;
     min-height: 100px;
-    max-height: 40vh;
+    max-height: 30vh;
 }
 
 .main {
