@@ -94,9 +94,10 @@ body {
     padding: 20px;
 }
 
-.desc {
-    /* font-family: "NewFont"; */
-    color: rgb(0, 0, 0);
+.desc-wrapper > p,
+.desc-wrapper > h3 {
+    padding: 10px 70px;
+    margin: 40px 0px;
 }
 
 #on-page {
