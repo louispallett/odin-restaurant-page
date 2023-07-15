@@ -1,7 +1,8 @@
 import './style.css';
 // import bannerimg from './banner.jpg';
-// import onBooking from './bookings';
+import onBookings from './bookings';
 import onHome from './home';
+import onContact from './contact';
 
 const createPage = (() => {
 
@@ -18,7 +19,7 @@ const createPage = (() => {
                         </div>
                         <div class="links">
                             <button class="home">Home</button>
-                            <button class="bookings">Bookings</button>
+                            <button class="bookings"">Bookings</button>
                             <button class="contact">Contact Us</button>
                         </div>`
     content.appendChild(header);
@@ -42,4 +43,22 @@ const createPage = (() => {
     content.appendChild(main);
 })();
 
+export const homeBtn = document.querySelector(".home");
+export const bookingsBtn = document.querySelector(".bookings");
+export const contactBtn = document.querySelector(".contact");
+
+homeBtn.addEventListener("click", () => {
     onHome();
+});
+
+bookingsBtn.addEventListener("click", () => {
+    onBookings();
+});
+
+contactBtn.addEventListener("click", () => {
+    onContact();
+})
+
+export const myVariable = "Hello World";
+
+onHome();
