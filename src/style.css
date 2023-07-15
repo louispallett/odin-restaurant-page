@@ -95,12 +95,14 @@ body {
 }
 
 .desc-wrapper > p,
-.desc-wrapper > h3 {
+.desc-wrapper > h3,
+.desc-wrapper > form {
     padding: 10px 70px;
     margin: 40px 0px;
 }
 
 #on-page {
-    /* content: url("./leaf.svg");*/
+    background-image: url("./leaf.svg");
+    background-repeat: no-repeat;
     border-bottom: 2px solid white;
 }
