@@ -1,8 +1,10 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
-#content {
-    display: flex;
-    flex: 1 auto;
+#header {
     background-color: grey;
+    & * {
+        //Font
+        color: white;
+    }
 }
