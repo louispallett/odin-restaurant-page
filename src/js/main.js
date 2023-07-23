@@ -12,25 +12,19 @@ const createPage = (() => {
     const header = document.createElement("div");
     header.classList.add("container", "text-center");
     header.setAttribute("id", "header");
-    
-    const headerRowArray = [];
-    const headerColArray = [];
-    
-    for(let i = 0; i < 1; i++) {
+   
+    for (let i = 0; i < 2; i++) { // Change loop condition to 2 for two rows
         const headerRow = document.createElement("div");
         headerRow.classList.add("row");
-        headerRowArray.push(headerRow);
 
-        for(let j = 0; j < 2; j++) {
-        const headerCol = document.createElement("div");
-        headerCol.classList.add("col-1");
-        headerCol.textContent = "Matcha";
-        headerColArray.push(headerCol);
-        headerRowArray[i].appendChild(headerColArray[j]);
+        for (let j = 0; j < 2; j++) {
+            const headerCol = document.createElement("div");
+            headerCol.classList.add("col");
+            headerCol.textContent = "Matcha";
+            headerRow.appendChild(headerCol);
+
         }
-
-        console.log(headerRowArray);
-        header.appendChild(headerRowArray[i]);
+        header.appendChild(headerRow);
     }
 
     content.appendChild(header);
