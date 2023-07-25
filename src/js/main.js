@@ -4,7 +4,13 @@ import '../scss/styles.scss'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
+// import Icon from "../icon.svg";
 
+// const iconContainer = document.getElementById("icon");
+// const icon = new Image();
+// icon.src = Icon;
+
+// iconContainer.appendChild(icon); 
 
 // const createPage = (() => {
 //     const content = document.getElementById("content");
@@ -17,7 +23,7 @@ import * as bootstrap from 'bootstrap'
 //         const headerRow = document.createElement("div");
 //         headerRow.classList.add("row");
 
-//         for (let j = 0; j < 2; j++) {
+//         for (let j = 0; j < 2; j++) {  
 //             const headerCol = document.createElement("div");
 //             // headerCol.classList.add("col", `no${j}`);
 //             headerCol.textContent = "Matcha";
